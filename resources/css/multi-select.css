@@ -1,0 +1,66 @@
+/* resources/css/multi-select.css */
+.custom-multi-select {
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.custom-multi-select .selected-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 5px;
+}
+
+.custom-multi-select .dropdown-menu {
+    position: absolute;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+    z-index: 1000;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-multi-select .dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.custom-multi-select .dropdown-item.selected {
+    background-color: #007bff;
+    color: white;
+}
+
+.custom-multi-select .dropdown-item:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.selected-item {
+    display: inline-block;
+    margin: 2px;
+    padding: 5px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+}
+
+.selected-item span {
+    cursor: pointer;
+}
+
+.custom-multi-select .form-control {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.custom-multi-select .form-control:focus {
+    border: none;
+    box-shadow: none;
+}
